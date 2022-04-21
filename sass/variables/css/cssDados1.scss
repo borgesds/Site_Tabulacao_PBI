@@ -1,0 +1,91 @@
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container, .header {
+    background-color: $ter-color;
+    box-shadow: 0 0 10px $secondary-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px 5px;
+    padding: 15px; 
+    background-color: $quar-color;
+    margin: 20px;
+    border-radius: 8px;
+}
+    
+.containergrid {
+    padding: 5px;
+    text-align: left;
+}
+
+.containergrid label {
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 10px;
+}
+
+.form-control {
+    border: 2px solid #6b1c1c;
+    border-radius: 7px;
+}
+
+.date {
+    border: 2px solid #6b1c1c;
+    border-radius: 7px;
+    color: #6b1c1c;
+    width: 180px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px; 
+    background-color: $quar-color;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.file {
+    border: 2px solid #6b1c1c;
+    border-radius: 7px;
+    color: #fff;
+}

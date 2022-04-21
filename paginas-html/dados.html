@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dados</title>
+</head>
+<body>
+    <div class="container">
+        <head class="header">
+            <a href="/">Logo</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="./dados.html">Home</a></li>
+                    <li><a href="./dash.html">Dashboard</a></li>
+                </ul>
+            </nav>
+        </head>
+    </div>
+
+    <h1>CADASTRO TABULAÇÃO</h1>
+
+    <section class="grid">
+        <div class="grid-container">
+            <div class="containergrid">
+                <label>Nome da Tabulação</label>
+                <input type="text" class="form-control form-control">
+            </div>
+            <div class="containergrid">
+                <label>Apelido da Tabulação</label>
+                <input type="text" class="form-control form-control">
+            </div>
+            <div class="containergrid">
+                <label>Status Tabulação</label>
+                <input class="form-control" list="browsers1" name="browser" id="browser1" placeholder="Selecione">
+                <datalist id="browsers1">
+                    <option value="Ativo">
+                    <option value="Finalizado">
+                    <option value="Pausado">
+                    <option value="Revisão">
+                    <option value="Produção">
+                </datalist>
+            </div>
+            <div class="containergrid">
+                <label>Tipo de Tabulação</label>
+                <input class="form-control" list="browsers2" name="browser" id="browser2" placeholder="Selecione">
+                <datalist id="browsers2">
+                    <option value="Saque">
+                    <option value="Pagamentos">
+                    <option value="Logística">
+                    <option value="RH">
+                    <option value="Outros">
+                </datalist>
+            </div>
+            <div class="containergrid">
+                <label>Tipo do Arquivo</label>
+                <input class="form-control" list="browsers3" name="browser" id="browser3" placeholder="Selecione">
+                <datalist id="browsers3">
+                    <option value="Word">
+                    <option value="TXT">
+                    <option value="Excel">
+                    <option value="PBI">
+                    <option value="Python">
+                    <option value="Java">
+                    <option value="SQL">
+                    </datalist>
+            </div>
+            <div class="containergrid">
+                <label>Seguimento</label>
+                <input class="form-control" list="browsers4" name="browser" id="browser4" placeholder="Selecione">
+                    <datalist id="browsers4">
+                        <option value="Banco">
+                        <option value="IPR">
+                        <option value="Logística">
+                        <option value="RH">
+                        <option value="Outros">
+                    </datalist>
+            </div>
+            <div class="containergrid">
+                <label>Instituição Responsável</label>
+                <input class="form-control" list="browsers5" name="browser" id="browser5" placeholder="Selecione">
+                    <datalist id="browsers5">
+                        <option value="">
+                        <option value="Pagamentos">
+                        <option value="Logística">
+                        <option value="RH">
+                        <option value="Outros">
+                    </datalist>
+            </div>
+            
+            <div class="containergrid">
+                <label>Data Início</label>
+                <input class="date" type="date" id="date" name="data">
+            </div>
+            <div class="containergrid">
+                <label>Data Fim</label>
+                <input class="date" type="date" id="date" name="date">
+            </div>
+            <div class="containergrid">
+                <label>Início Agendamento</label>
+                <input class="date" type="date" id="date" name="date">
+            </div>
+            <div class="containergrid">
+                <label>Fim Agendamento</label>
+                <input class="date" type="date" id="date" name="date">
+            </div>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div class="grid-container2">
+            <div class="containergrid">
+                <label>Consulta Tipo</label>
+                <input class="form-control" list="tipo" name="browser" id="browser" placeholder="Selecione">
+                    <datalist id="tipo">
+                        <option value="Tipo 01">
+                        <option value="Tipo 02">
+                        <option value="Tipo 03">
+                        <option value="Tipo 04">
+                        <option value="Tipo 05">
+                    </datalist>
+            </div> 
+            <div class="containergrid">
+                <label>Carregar Arquivo</label>
+                <input class="file"type="file" class="form-control-file border">
+            </div>
+        </div>
+    </section>
+
+    <section class="grid">
+        <div class="wrapper">
+            <div class="tabs">
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                <label for="tab-1" class="tab-label">Arquivos Carregados</label>
+                <div class="tab-content">
+                    <div class="table">
+                        <table>
+                             <thead>
+                                 <tr>
+                                     <th>Código |</th>
+                                     <th>Nome da Tabulação |</th>
+                                     <th> Status Tabulação |</th>
+                                     <th> Tipo de Tabulação |</th>
+                                     <th> Seguimento</th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr>
+                                     <td>001</td>
+                                     <td> BD_pagamentos</td>
+                                     <td> Ativo</td>
+                                     <td> Pagamentos</td>
+                                     <td> Banco</td>
+                                 </tr>
+                                 <tr>
+                                     <td>002</td>
+                                     <td> BD_RH</td>
+                                     <td> Finalizado</td>
+                                     <td> RH</td>
+                                     <td> RH</td>
+                                 </tr>
+                                 <tr>
+                                    <td>003</td>
+                                    <td> logistic_02.04.22</td>
+                                    <td> Produção</td>
+                                    <td> Logística</td>
+                                    <td> Logística</td>
+                                </tr>
+                                <tr>
+                                    <td>004</td>
+                                    <td> Loja_bd_03.05.22</td>
+                                    <td> Pausado</td>
+                                    <td> Outros</td>
+                                    <td> Logística</td>
+                                </tr>
+                             </tbody>
+                         </table>
+                     </div>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                <label for="tab-2" class="tab-label">Equipes</label>
+                <div class="tab-content">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">Equipe 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                        <label class="form-check-label" for="check2">Equipe 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check3">Equipe 3</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check4" name="option2" value="something">
+                        <label class="form-check-label" for="check4">Equipe 4</label>
+                    </div>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                <label for="tab-3" class="tab-label">Produto</label>
+                <div class="tab-content">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">Produto 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                        <label class="form-check-label" for="check2">Produto 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check3">Produto 3</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check4" name="option2" value="something">
+                        <label class="form-check-label" for="check4">Produto 4</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check5" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check5">Produto 5</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check6" name="option2" value="something">
+                        <label class="form-check-label" for="check6">Produto 6</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check7" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check7">Produto 7</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check8" name="option2" value="something">
+                        <label class="form-check-label" for="check8">Produto 8</label>
+                    </div>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+                <label for="tab-4" class="tab-label">Status</label>
+                <div class="tab-content">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">Equipe em feedback.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                        <label class="form-check-label" for="check2">Produto em espera para liberação.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check3">Liberado para pagamento.</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check4" name="option2" value="something">
+                        <label class="form-check-label" for="check4">Revisão de tabulação.</label>
+                    </div>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-5" class="tab-switch">
+                <label for="tab-5" class="tab-label">Telefones</label>
+                <div class="tab-content">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">MG</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                        <label class="form-check-label" for="check2">SP</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check3">RJ</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check4" name="option2" value="something">
+                        <label class="form-check-label" for="check4">SC</label>
+                    </div>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-6" class="tab-switch">
+                <label for="tab-6" class="tab-label">Pausas</label>
+                <div class="tab-content">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">Pausa Tipo 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                        <label class="form-check-label" for="check2">Pausa Tipo 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check3">Pausa Tipo 3</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check4" name="option2" value="something">
+                        <label class="form-check-label" for="check4">Pausa Tipo 4</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check5" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check5">Pausa Tipo 5</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check6" name="option2" value="something">
+                        <label class="form-check-label" for="check6">Pausa Tipo 6</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check7" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check7">Pausa Tipo 7</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check8" name="option2" value="something">
+                        <label class="form-check-label" for="check8">Pausa Tipo 8</label>
+                    </div>
+                </div>
+              </div>
+              <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-7" class="tab-switch">
+                <label for="tab-7" class="tab-label">Forma de Pagamentos</label>
+                <div class="tab-content">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check1">Cartão</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                        <label class="form-check-label" for="check2">Débito Conta (PIX)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="check3" name="option1" value="something" checked>
+                        <label class="form-check-label" for="check3">Boleto</label>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+    </section>
+</body>
+</html>
